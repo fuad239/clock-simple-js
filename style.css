@@ -1,16 +1,28 @@
 
-
-
-#time{
-    background-color: rgb(8, 78, 136);
-    color: rgb(250, 248, 248);
-    padding: 20px;
-    position: absolute;
-    width: 40vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    background: #131419;
+}
+.clock{
+    background: #131419;
+    height: 120px;
+    width: 500px;
+    line-height: 120px;
     text-align: center;
-    height: 10vh;
-    font-size: 3rem;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+    padding: 0 5px;
+    box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
+                3px 3px 5px rgba(0,0,0,0.5)
+}
+.clock #time{
+    font-size: 70px;
+    color: cyan;
 }
